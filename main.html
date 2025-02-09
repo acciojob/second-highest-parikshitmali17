@@ -10,6 +10,7 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let allEqaul=false
 			for( let i=0; i<arr.length-1; i++){
          
 				for(let j=i+1;j<arr.length; j++){
@@ -17,11 +18,21 @@
 						    let temp=arr[i];
 						   arr[i]=arr[j];
 						   arr[j]=temp
-						   
+						   if(!arr[i]==arr[j]){
+							   allEqaul=true
+						   }
 					   }
 				}
 			}
-			return arr[1]
+			for(let )
+			if(arr.length==0 ||arr.length==1 ||){
+				return Infinity 
+			}else if(allEqaul){
+				return Infinity 
+			}else{
+				return arr[1]
+			}
+			
 			
 		}
 
