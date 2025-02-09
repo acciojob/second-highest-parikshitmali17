@@ -11,20 +11,24 @@
 		function secondHighest(arr) {
 			//Write your code here
 			let allEqaul=false
+			let currMin=i
 			for( let i=0; i<arr.length-1; i++){
          
 				for(let j=i+1;j<arr.length; j++){
-					   if(arr[i]<arr[j]){
-						    let temp=arr[i];
-						   arr[i]=arr[j];
-						   arr[j]=temp
-						   if(!arr[i]==arr[j]){
+					   if(arr[currMin]<arr[j]){
+						    currMin=j;
+						   
+					   }
+					if(!arr[i]==arr[j]){
 							   allEqaul=true
 						   }
-					   }
+					let temp=arr[i];
+						   arr[i]=arr[j];
+						   arr[j]=temp
 				}
 			}
-			for(let )
+			
+			
 			if(arr.length==0 ||arr.length==1 ||){
 				return Infinity 
 			}else if(allEqaul){
